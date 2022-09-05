@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+</head>
+<body>
+    <p id="ck"></p>
+    <button onclick="clearInterval(clock)">click me</button>
+    <script>
+        var clock=setInterval(cktime,1000)
+
+        function cktime()   {
+            var d= new  Date();
+            var sk=d.toLocaleTimeString();
+            document.getElementById('ck').innerHTML=sk;
+          }
+    </script>
+</body>
+</html>

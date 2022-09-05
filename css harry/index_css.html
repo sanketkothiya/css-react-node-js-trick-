@@ -1,0 +1,307 @@
+<!-- /* css */
+/* inline
+internal
+external */ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0%;
+        }
+
+        p {
+            color: rebeccapurple;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: normal;
+            font-size: 3em;
+            font-size: 3rem;
+            font-weight: 100;
+            font-style: italic;
+            height: 23px;
+            width: 23px;
+            border: 2px solid rebeccapurple;
+            padding: 0%;
+            margin: auto;
+            box-sizing: border-box;
+            width: auto;
+            /* when use box sizing u use width */
+
+
+        }
+
+        #container {
+            background-color: aliceblue;
+        }
+
+        .container1 {
+            background-image: none;
+        }
+
+        #picture {
+            height: auto;
+            width: 455px;
+            background-color: rebeccapurple;
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        #float1 {
+            float: left;
+            width: 12%;
+            clear: both;
+        }
+
+        p,
+        h1 {
+            text-align: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: dashed;
+        }
+
+        li {
+            list-style: none;
+            overflow: auto;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+
+        .oneline {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 23%;
+
+        }
+
+        .position {
+            /* relative to normal position */
+            position: relative;
+            top: 34px;
+            /* absolute relate to parent */
+            position: absolute;
+            position: fixed;
+            position: sticky;
+
+        }
+
+        .filter {
+            filter: blur();
+        }
+
+        .left {
+            position: absolute;
+            left: 34px;
+            top: 20px;
+
+        }
+
+        .mid {
+            display: block;
+            width: 33px;
+            margin: 20px auto;
+            border: 2px solid gray;
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            border: 2px solid yellow;
+
+        }
+
+        .visibility {
+            visibility: hidden;
+            display: none;
+        }
+
+        .zindex {
+            /* work only position relative */
+            position: relative;
+            top: 20px;
+            z-index: -10px;
+
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-direction: column;
+            flex-flow: row-reverse;
+            flex-shrink: inherit;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .em .rem .vh .vw {
+            /* em=10 x parent nu */
+            /* vw= full width */
+
+        }
+
+        @media (min-width=300px) and (max-width=500px) {
+            #box-2 {
+                display: block;
+            }
+        }
+
+
+        /* pseudo selcetor in css */
+        .div li p {}
+
+        .div>p {}
+
+        .div+p {}
+
+        input[type='text'] {
+            padding: 0%;
+        }
+
+        a[target] {
+            color: aliceblue;
+        }
+
+        li.nth_child(3) {}
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("") no-repeat center center/cover;
+
+        }
+
+        head::before {
+            background: url("") no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+        }
+
+        .box_shado {
+            box-shadow: 0cm;
+        }
+
+        .variable {
+            --box-color: red;
+            background-color: var(--box-color);
+
+        }
+
+        :root {
+            --primary-color: green;
+            --danger-color: pink;
+
+        }
+
+        .box_animation {
+            background-color: red;
+            width: 25px;
+            position: absolute;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+
+
+        }
+
+        @keyframes harry1 {
+            form {
+                width: 25px;
+            }
+
+            to {
+                width: 40px;
+            }
+        }
+
+        @keyframes harry2 {
+
+            0% {}
+
+            25% {}
+
+            75% {}
+
+            100% {}
+        }
+
+        .transition {
+            transition-property: backgraound-colot;
+            transform: scale();
+        }
+
+        /* /////////////////////////////////////////////////////////// */
+
+        /* grid */
+
+        .container2 {
+            display: grid;
+            grid-template-columns: 300px 100px 100px;
+            grid-template-columns: 300px auto 100px;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-auto-rows: 3fr;
+            grid-gap: 1rem;
+            grid-template-rows: repeat(4, 1fr);
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+        }
+
+        .container3 {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                "navbar navbar navbar navbar"
+                "section section section aside";
+
+        }
+
+        .item {
+            grid-area: navbar;
+        }
+
+        .item2 {
+            grid-area: section;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: aqua;
+            }
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="sk/fc.css">
+
+</head>
+
+<body>
+    <p id="container">my name is sanket</p>
+
+</body>
+
+</html>

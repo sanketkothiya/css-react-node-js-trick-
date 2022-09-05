@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let fname = "sanket";
+        console.log(`${fname}`.startsWith('s'));
+        console.log(`${fname}`.endsWith('t'));
+        console.log(`${fname}`.includes('an'));
+        console.log(`${fname} `.repeat('10'));
+
+
+
+
+        // destructuring
+
+        const s1 = ['sanket', 'preet', 'jay', 'jigar'];
+        let [s5, s2, s3, s4] = s1;
+
+
+        let [s5, , , s4last] = s1;
+
+        let a = 10;
+        let b = 20;
+
+        [a, b] = [b, a];
+        console.log(`${a} and ${b}`);
+
+
+        // object destrucring
+
+        const idata = {
+            name: 'sanket',
+            age: 25,
+            deg: 'be',
+            hob: {
+                f: 'cricket',
+                s: 'garba'
+            }
+        }
+        // console.log(`my name is ${idata.name}`);
+        let { name, age, deg } = idata;
+        let { name: myname, age, deg, hob } = idata;
+        // console.log(`my name is ${name}`);
+        // console.log(`my name is ${myname}`);
+
+
+        // fat arrow
+
+        const sum = (a, b) => {
+            return a + b;
+        }
+
+        console.log(sum(23, 45));
+
+        // default parameter
+
+        const mul = (a, b = 5) => {
+            console.log(`${a * b}`);
+        }
+
+        mul(4);
+
+        // rest parameter
+        function sum(...inputs) {
+            console.log(inputs);
+            // give array
+            let total = 0;
+            for (let i of inputs) {
+                // console.log(`${i}`);
+                total += i;
+
+            }
+            console.log(total);
+        }
+        sum(1, 2, 3, 4, 5, 6, 7, 8);
+
+        //   
+
+        function mul(a, b, ...c) {
+            console.log(`${a}`);
+            console.log(c);
+            console.log(c[0]);
+            console.log(c.length);
+            console.log(c.includes('sanket'));
+        }
+
+        //  apply , bind, call ,spred oprator
+
+        function sum(a, b, c) {
+            console.log(a + b + c);
+
+        }
+
+        var arrVal = [1, 2, 3];
+        // sum.apply(null,arrVal);
+        // es6
+        sum(...arrVal);
+
+        // replace concat()
+        let arr1 = [1, 2, 3];
+        let arr2 = [4, 5, 6];
+
+        // arr1=arr1.concat(arr2);
+        // es6
+        arr1 = [...arr1, ...arr2];
+
+
+        // replcae copy
+
+        // let ar1=[1,2,3];
+        // let ar2=ar1;
+
+        // ar2.push(4,5)
+
+        let ar2 = [...ar1, 4, 5];
+        console.log(ar2);
+
+
+        // math
+
+        let a = 10;
+        console.log(Math.sign());
+
+
+    </script>
+
+</body>
+
+</html>

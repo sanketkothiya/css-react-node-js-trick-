@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom3</title>
+</head>
+<body>
+
+    <button onclick="s3('div')">click me</button>
+    <script>
+        document.write(window.location.href);
+
+
+        function s1(){
+
+            window.location.assign("youtube path");
+        }
+
+        function s2(){
+            window.print();
+        }
+
+        function s3(para){
+                    var backup=document.body.innerHTML;
+                    var diccontent=document.getElementById(para).innerHTML;
+                    document.body.innerHTML=diccontent;
+                    window.print();
+                    document.body.innerHTML=backup;
+        }
+    </script>
+</body>
+</html>
