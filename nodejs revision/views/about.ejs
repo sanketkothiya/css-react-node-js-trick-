@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs'); %>
+        <title>
+
+        </title>
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs'); %>
+        <div class="container mt-4">
+            <h1>Welcome to about page!</h1>
+            <h2>
+                <%= user.name %>
+            </h2>
+            <h2>
+                <%= user.age %>
+            </h2>
+            <h1>skills</h1>
+            <ul>
+                <% user.skills.forEach((item)=>{ %>
+                    <li>
+                        <%= item %>
+                    </li>
+
+                    <% })%>
+            </ul>
+
+        </div>
+</body>
+
+</html>
