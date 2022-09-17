@@ -27,7 +27,7 @@
                 const jsdata = await jsondata.json();
                 const cs = jsdata.Countries[101];
                 // console.log(cs);
-                
+
 
             } catch (error) {
                 console.log(error);
@@ -36,6 +36,18 @@
 
         }
 
+        async function data() {
+            try {
+                const jsondata = await fetch();
+                const finaldata = await jsondata.json();
+                const cs = finaldata.Countries[101]
+
+            }
+            catch (err) {
+                throw err
+
+            }
+        }
         getcoviddata();
 
     </script>
