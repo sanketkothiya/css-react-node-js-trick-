@@ -1,5 +1,5 @@
-// console.log("welcome")
-// let a = document.getElementById("myfirst");
+console.log("welcome")
+let a = document.getElementById("myfirst");
 // let b = document.querySelector("#myfirst");
 // let c = document.getElementsByClassName("container");
 // Array.from(c).forEach(element => {
@@ -14,11 +14,11 @@
 // // a.style.color = "red";
 
 
-// console.log(b);
+// console.log(a);
 
 
 // let cont = document.querySelector('.no');
-// cont = document.querySelector('.container');
+cont = document.querySelector('.container');
 // let nodeName = cont.childNodes[1].nodeName;
 // let nodeName = cont.childNodes;
 // let nodeType = cont.childNodes[1].nodeType;
@@ -35,7 +35,7 @@
 // console.log(cont.childNodes);
 // console.log(cont.children);
 
-// let container = document.querySelector('div.container');
+let container = document.querySelector('div.container');
 
 // console.log(container.children[1].children[0]);
 
@@ -47,6 +47,7 @@
 // console.log(container.children);
 // console.log(container.childElementCount); // Count of child elements
 
+// console.log(container.firstElementChild);
 // console.log(container.firstElementChild.parentNode);
 // console.log(container.firstElementChild.nextSibling);
 // console.log(container.firstElementChild.nextElementSibling);
@@ -71,15 +72,16 @@
 // console.log(ul)
 // console.log(element)
 
-// let elem2 = document.createElement('h3');
+// let elem2 = document.createElement('h3') ;
 // elem2.id = 'elem2';
 // elem2.className = 'elem2';
 // let tnode = document.createTextNode('This is a created node for elem2');
 // elem2.appendChild(tnode);
 
 // element.replaceWith(elem2);
-// let myul = document.getElementById('mul');
-// myul.replaceChild(element, document.getElementById('fui'));
+let myul = document.getElementById('mul');
+console.log(myul)
+myul.replaceChild(element, document.getElementById('fui'));
 // mul.removeChild(document.getElementById('lui'));
 // let pr = elem2.hasAttribute('class');
 // let pr = elem2.getAttribute('li');
@@ -152,16 +154,16 @@
 
 //  practice
 
-let str = "python";
-let links = document.links;
-console.log(links);
-let href;
-Array.from(links).forEach(function (element) {
-    href = element.href;
-    if (href.includes(str)) {
-        console.log(href);
-    }
-});
+// let str = "python";
+// let links = document.links;
+// console.log(links);
+// let href;
+// Array.from(links).forEach(function (element) {
+//     href = element.href;
+//     if (href.includes(str)) {
+//         console.log(href);
+//     }
+// });
 
-sanker.claaslist.add
-sanker.claaslist.remove
+// sanker.claaslist.add
+// sanker.claaslist.remove
