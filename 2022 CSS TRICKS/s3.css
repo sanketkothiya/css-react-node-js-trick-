@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 2.34rem;
+}
+body{
+ height: 100vh;   
+ display: grid;
+ place-items: center;
+}
+a{
+    font-size: 8rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+
+}
+
+a::after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    z-index: -1;
+    opacity: 0;
+    transform: skew(40deg);
+    top: -5%;
+    left: 6%;
+}
+
+a:hover
+::before{
+    transform: skew(0);
+    top: 0;
+    left: 0;
+}
+
+
+a{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.inner_cirlcel::before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    left: -20px;
+    top: 20px;
+    border-bottom-left-radius: ;
+}
+
+p:first-child{
+    
+
+}
+p:last-child{
+    
+
+}

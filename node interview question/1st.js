@@ -50,6 +50,7 @@ app.use(express.json)
 
 const x = (req, resp, next) => {
     if (!req.query.age) {
+
         resp.send("Please provide your age")
     }
     else if (req.query.age < 18) {
@@ -66,8 +67,6 @@ app.post('', x, (req, res) => {
 })
 
 // call
-
-
 
 // const person = {
 //     fullName: function() {

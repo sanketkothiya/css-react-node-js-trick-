@@ -1,0 +1,64 @@
+.animattion{
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: bell 1s linear infinite alternate-reverse ;
+    transform-origin: top;
+}
+
+@keyframes bell {
+    0% {
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(-20deg);
+    }
+    
+}
+
+.bell-notification::after{
+    content: attr(current-val);
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main p a{
+    background-color: red;
+}
+
+.selection p h1{
+    background-color: gray;
+}
+
+::is(selection,main,article) p a ::is(p,h1){
+    color: red;
+}
+
+::where(){
+
+}
+
+/* ////////         custome scrooll bar     */
+
+::-webkit-scrollbar{
+    width: 2rem;
+
+
+}
+::-webkit-scrollbar-track{
+    background-color: red;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: black;
+}
+

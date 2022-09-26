@@ -29,7 +29,7 @@
 // var $myName = "thapa technical";
 // var myNaem% = "thapa technical";
 
-// console.log(myNaem%);
+// console.log(1myName);
 
 
 
